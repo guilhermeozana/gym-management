@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymManagement.Api", "GymManagement.Api\GymManagement.Api.csproj", "{37554FD2-5662-4A9A-BAF7-3FB598910964}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymManagement.Infrastructure", "GymManagement.Infrastructure\GymManagement.Infrastructure.csproj", "{E0625BDD-D142-4C2B-9428-D25989F71F11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymManagement.Application", "GymManagement.Application\GymManagement.Application.csproj", "{E557BD68-F642-42C3-B026-CFD44EC2A7EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GymManagement.Domain", "GymManagement.Domain\GymManagement.Domain.csproj", "{58675A20-B757-4652-959B-07176DD40B84}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{37554FD2-5662-4A9A-BAF7-3FB598910964}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37554FD2-5662-4A9A-BAF7-3FB598910964}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37554FD2-5662-4A9A-BAF7-3FB598910964}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37554FD2-5662-4A9A-BAF7-3FB598910964}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0625BDD-D142-4C2B-9428-D25989F71F11}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0625BDD-D142-4C2B-9428-D25989F71F11}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0625BDD-D142-4C2B-9428-D25989F71F11}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0625BDD-D142-4C2B-9428-D25989F71F11}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E557BD68-F642-42C3-B026-CFD44EC2A7EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E557BD68-F642-42C3-B026-CFD44EC2A7EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E557BD68-F642-42C3-B026-CFD44EC2A7EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E557BD68-F642-42C3-B026-CFD44EC2A7EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58675A20-B757-4652-959B-07176DD40B84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58675A20-B757-4652-959B-07176DD40B84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58675A20-B757-4652-959B-07176DD40B84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58675A20-B757-4652-959B-07176DD40B84}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
