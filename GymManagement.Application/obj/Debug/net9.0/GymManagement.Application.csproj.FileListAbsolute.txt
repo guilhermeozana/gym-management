@@ -1,0 +1,16 @@
+C:\Dometrain\GymManagement\GymManagement.Application\bin\Debug\net9.0\GymManagement.Application.deps.json
+C:\Dometrain\GymManagement\GymManagement.Application\bin\Debug\net9.0\GymManagement.Application.dll
+C:\Dometrain\GymManagement\GymManagement.Application\bin\Debug\net9.0\GymManagement.Application.pdb
+C:\Dometrain\GymManagement\GymManagement.Application\bin\Debug\net9.0\GymManagement.Domain.dll
+C:\Dometrain\GymManagement\GymManagement.Application\bin\Debug\net9.0\GymManagement.Domain.pdb
+C:\Dometrain\GymManagement\GymManagement.Application\obj\Debug\net9.0\GymManagement.Application.csproj.AssemblyReference.cache
+C:\Dometrain\GymManagement\GymManagement.Application\obj\Debug\net9.0\GymManagement.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dometrain\GymManagement\GymManagement.Application\obj\Debug\net9.0\GymManagement.Application.AssemblyInfoInputs.cache
+C:\Dometrain\GymManagement\GymManagement.Application\obj\Debug\net9.0\GymManagement.Application.AssemblyInfo.cs
+C:\Dometrain\GymManagement\GymManagement.Application\obj\Debug\net9.0\GymManagement.Application.csproj.CoreCompileInputs.cache
+C:\Dometrain\GymManagement\GymManagement.Application\obj\Debug\net9.0\GymManagement.Application.sourcelink.json
+C:\Dometrain\GymManagement\GymManagement.Application\obj\Debug\net9.0\GymManag.E831DFE7.Up2Date
+C:\Dometrain\GymManagement\GymManagement.Application\obj\Debug\net9.0\GymManagement.Application.dll
+C:\Dometrain\GymManagement\GymManagement.Application\obj\Debug\net9.0\refint\GymManagement.Application.dll
+C:\Dometrain\GymManagement\GymManagement.Application\obj\Debug\net9.0\GymManagement.Application.pdb
+C:\Dometrain\GymManagement\GymManagement.Application\obj\Debug\net9.0\ref\GymManagement.Application.dll

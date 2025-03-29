@@ -47,6 +47,16 @@
           "bin/placeholder/GymManagement.Application.dll": {}
         }
       },
+      "GymManagement.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v9.0",
+        "compile": {
+          "bin/placeholder/GymManagement.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/GymManagement.Contracts.dll": {}
+        }
+      },
       "GymManagement.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
@@ -96,6 +106,11 @@
       "path": "../GymManagement.Application/GymManagement.Application.csproj",
       "msbuildProject": "../GymManagement.Application/GymManagement.Application.csproj"
     },
+    "GymManagement.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../GymManagement.Contracts/GymManagement.Contracts.csproj",
+      "msbuildProject": "../GymManagement.Contracts/GymManagement.Contracts.csproj"
+    },
     "GymManagement.Domain/1.0.0": {
       "type": "project",
       "path": "../GymManagement.Domain/GymManagement.Domain.csproj",
@@ -105,6 +120,7 @@
   "projectFileDependencyGroups": {
     "net9.0": [
       "GymManagement.Application >= 1.0.0",
+      "GymManagement.Contracts >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 9.0.2"
     ]
   },
@@ -138,6 +154,9 @@
           "projectReferences": {
             "C:\\Dometrain\\GymManagement\\GymManagement.Application\\GymManagement.Application.csproj": {
               "projectPath": "C:\\Dometrain\\GymManagement\\GymManagement.Application\\GymManagement.Application.csproj"
+            },
+            "C:\\Dometrain\\GymManagement\\GymManagement.Contracts\\GymManagement.Contracts.csproj": {
+              "projectPath": "C:\\Dometrain\\GymManagement\\GymManagement.Contracts\\GymManagement.Contracts.csproj"
             }
           }
         }

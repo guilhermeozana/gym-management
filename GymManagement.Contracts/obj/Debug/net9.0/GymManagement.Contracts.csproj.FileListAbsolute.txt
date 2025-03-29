@@ -1,0 +1,12 @@
+C:\Dometrain\GymManagement\GymManagement.Contracts\bin\Debug\net9.0\GymManagement.Contracts.deps.json
+C:\Dometrain\GymManagement\GymManagement.Contracts\bin\Debug\net9.0\GymManagement.Contracts.dll
+C:\Dometrain\GymManagement\GymManagement.Contracts\bin\Debug\net9.0\GymManagement.Contracts.pdb
+C:\Dometrain\GymManagement\GymManagement.Contracts\obj\Debug\net9.0\GymManagement.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dometrain\GymManagement\GymManagement.Contracts\obj\Debug\net9.0\GymManagement.Contracts.AssemblyInfoInputs.cache
+C:\Dometrain\GymManagement\GymManagement.Contracts\obj\Debug\net9.0\GymManagement.Contracts.AssemblyInfo.cs
+C:\Dometrain\GymManagement\GymManagement.Contracts\obj\Debug\net9.0\GymManagement.Contracts.csproj.CoreCompileInputs.cache
+C:\Dometrain\GymManagement\GymManagement.Contracts\obj\Debug\net9.0\GymManagement.Contracts.sourcelink.json
+C:\Dometrain\GymManagement\GymManagement.Contracts\obj\Debug\net9.0\GymManagement.Contracts.dll
+C:\Dometrain\GymManagement\GymManagement.Contracts\obj\Debug\net9.0\refint\GymManagement.Contracts.dll
+C:\Dometrain\GymManagement\GymManagement.Contracts\obj\Debug\net9.0\GymManagement.Contracts.pdb
+C:\Dometrain\GymManagement\GymManagement.Contracts\obj\Debug\net9.0\ref\GymManagement.Contracts.dll
