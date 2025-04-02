@@ -1,5 +1,4 @@
 using GymManagement.Application;
-using GymManagement.Application.Services;
 using GymManagement.Infrastructure;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
