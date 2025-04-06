@@ -1,3 +1,4 @@
+using GymManagement.Application.Common.Interfaces;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace GymManagement.Application;
