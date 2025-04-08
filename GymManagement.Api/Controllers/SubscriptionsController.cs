@@ -3,6 +3,7 @@ using GymManagement.Application.Subscriptions.Queries;
 using GymManagement.Contracts.Subscriptions;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
+using DomainSubscriptionType = GymManagement.Domain.Subscriptions.SubscriptionType;
 
 namespace GymManagement.Api.Controllers;
 
@@ -20,8 +21,13 @@ public class SubscriptionsController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> CreateSubscription([FromBody] CreateSubscriptionRequest request)
     {
+        if(DomainSubscriptionType.TryFromName(request.SubscriptionType.ToString(), out var subscriptionType))
+        {
+            return Problem(statusCode: StatusCodes.Status400BadRequest, detail: "Invalid Subscription Type");
+        }
+        
         var command = new CreateSubscriptionCommand(
-            request.SubscriptionType.ToString(),
+            subscriptionType,
             request.AdminId);
         
         var createSubscriptionResult = await _mediator.Send(command);
@@ -41,7 +47,7 @@ public class SubscriptionsController : ControllerBase
         return getSubscriptionsResult.MatchFirst(
             subscription => Ok(new SubscriptionResponse(
                 subscription.Id,
-                Enum.Parse<SubscriptionType>(subscription.SubscriptionType))),
+                Enum.Parse<SubscriptionType>(subscription.SubscriptionType.Name))),
             error => Problem()
         );
     }
