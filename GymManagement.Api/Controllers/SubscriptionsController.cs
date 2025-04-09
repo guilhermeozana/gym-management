@@ -1,4 +1,5 @@
 using GymManagement.Application.Subscriptions.Commands.CreateSubscription;
+using GymManagement.Application.Subscriptions.Commands.DeleteSubscription;
 using GymManagement.Application.Subscriptions.Queries;
 using GymManagement.Contracts.Subscriptions;
 using MediatR;
@@ -21,7 +22,7 @@ public class SubscriptionsController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> CreateSubscription([FromBody] CreateSubscriptionRequest request)
     {
-        if(DomainSubscriptionType.TryFromName(request.SubscriptionType.ToString(), out var subscriptionType))
+        if(!DomainSubscriptionType.TryFromName(request.SubscriptionType.ToString(), out var subscriptionType))
         {
             return Problem(statusCode: StatusCodes.Status400BadRequest, detail: "Invalid Subscription Type");
         }
@@ -51,5 +52,19 @@ public class SubscriptionsController : ControllerBase
             error => Problem()
         );
     }
+    
+    [HttpDelete("{subscriptionId:guid}")]
+    public async Task<IActionResult> DeleteSubscription(Guid subscriptionId)
+    {
+        var command = new DeleteSubscriptionCommand(subscriptionId);
+
+        var deleteSubscriptionResult = await _mediator.Send(command);
+
+        return deleteSubscriptionResult.Match<IActionResult>(
+            _ => NoContent(),
+            _ => Problem()
+        );
+    }
+
 
 }
