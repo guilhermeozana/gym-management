@@ -33,7 +33,7 @@ public class SubscriptionsController : ApiController
         var createSubscriptionResult = await _mediator.Send(command);
 
         return createSubscriptionResult.MatchFirst(
-            subscription => Ok(new SubscriptionResponse(subscription.Id, request.SubscriptionType)),
+            subscription => Ok(new SubscriptionResponse(subscription.Id, ToDto(subscription.SubscriptionType))),
             Problem);
     }
     
@@ -65,5 +65,14 @@ public class SubscriptionsController : ApiController
         );
     }
 
-
+    private static SubscriptionType ToDto(DomainSubscriptionType subscriptionType)
+    {
+        return subscriptionType.Name switch
+        {
+            nameof(DomainSubscriptionType.Free) => SubscriptionType.Free,
+            nameof(DomainSubscriptionType.Starter) => SubscriptionType.Starter,
+            nameof(DomainSubscriptionType.Pro) => SubscriptionType.Pro,
+            _ => throw new InvalidOperationException(),
+        };
+    }
 }
