@@ -8,6 +8,7 @@ using DomainSubscriptionType = GymManagement.Domain.Subscriptions.SubscriptionTy
 
 namespace GymManagement.Api.Controllers;
 
+[ApiController]
 [Route("[controller]")] 
 public class SubscriptionsController : ApiController
 {

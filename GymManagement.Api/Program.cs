@@ -1,5 +1,6 @@
 using GymManagement.Application;
 using GymManagement.Infrastructure;
+using GymManagement.Infrastructure.Common.Middleware;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -12,6 +13,7 @@ var builder = WebApplication.CreateBuilder(args);
     builder.Services.AddControllers();
     builder.Services.AddProblemDetails();
     builder.Services.AddEndpointsApiExplorer();
+    builder.Services.AddHttpContextAccessor();
     builder.Services
         .AddApplication()
         .AddInfrastructure();
@@ -21,6 +23,8 @@ var app = builder.Build();
 
 {
     app.UseExceptionHandler();
+    app.AddInfrastructureMiddleware();
+    
     // Configure the HTTP request pipeline.
     if (app.Environment.IsDevelopment())
     {

@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace GymManagement.Api.Controllers;
 
-[ApiController]
+
 public class ApiController : ControllerBase
 {
     public IActionResult Problem(List<Error> errors)

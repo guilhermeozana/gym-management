@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace GymManagement.Api.Controllers;
 
+[ApiController]
 [Route("gyms/{gymId:guid}/rooms")]
 public class RoomsController  : ApiController
 {

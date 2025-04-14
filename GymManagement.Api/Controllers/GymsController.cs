@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Mvc.ModelBinding;
 
 namespace GymManagement.Api.Controllers;
 
+[ApiController]
 [Route("subscriptions/{subscriptionId:guid}/gyms")]
 public class GymsController : ApiController
 {
