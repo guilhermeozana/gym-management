@@ -4,4 +4,5 @@ namespace GymManagement.Application.Authorization;
 public class AuthorizeAttribute : Attribute
 {
     public string? Permissions { get; set; }
+    public string? Roles { get; set; }
 }
