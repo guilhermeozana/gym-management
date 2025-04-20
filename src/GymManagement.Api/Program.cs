@@ -16,7 +16,7 @@ var builder = WebApplication.CreateBuilder(args);
     builder.Services.AddHttpContextAccessor();
     builder.Services
         .AddApplication()
-        .AddInfrastructure();
+        .AddInfrastructure(builder.Configuration);
 }
 
 var app = builder.Build();
@@ -34,5 +34,6 @@ var app = builder.Build();
     app.UseHttpsRedirection();
 
     app.MapControllers();
+    app.UseAuthorization();
     app.Run();
 }

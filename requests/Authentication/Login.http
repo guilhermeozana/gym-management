@@ -1,0 +1,8 @@
+@host=http://localhost:5241
+POST {{host}}/authentication/login
+Content-Type: application/json
+
+{
+    "Email": "lior@mantinband.com",
+    "Password": "Amiko1234!!"
+}
