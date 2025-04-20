@@ -7,13 +7,7 @@ using Microsoft.Extensions.Hosting;
 
 var builder = WebApplication.CreateBuilder(args);
 {
-    // Add services to the container.
-    // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
-    builder.Services.AddOpenApi();
-    builder.Services.AddControllers();
-    builder.Services.AddProblemDetails();
-    builder.Services.AddEndpointsApiExplorer();
-    builder.Services.AddHttpContextAccessor();
+    
     builder.Services
         .AddApplication()
         .AddInfrastructure(builder.Configuration);
